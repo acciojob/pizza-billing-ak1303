@@ -2,12 +2,12 @@ package com.driver;
 
 public class Pizza {
 
-    private int price;
+    protected int price;
     private Boolean isVeg;
-    private int bill;
+    protected int bill;
 
-    private boolean extraCheeseAdded;
-    private boolean extraToppingsAdded;
+    protected boolean extraCheeseAdded;
+    protected boolean extraToppingsAdded;
     private boolean taken = false;
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
