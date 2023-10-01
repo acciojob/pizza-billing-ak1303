@@ -55,23 +55,24 @@ public class Pizza {
 
     }
 
-    public int getBill(){
+    public String getBill(){
         // your code goes here
-        System.out.println("Base Price Of The Pizza: "+this.price);
+        String s="";
+        s +="Base Price Of The Pizza: "+this.price+"\n";
         if(extraCheeseAdded){
-            System.out.println("Extra Cheese Added: 80");
+            s+="Extra Cheese Added: 80\n";
         }
         if(extraToppingsAdded){
             if(isVeg){
-                System.out.println("Extra Toppings Added: 70");
+                s+="Extra Toppings Added: 70\n";
             }
             else {
-                System.out.println("Extra Toppings Added: 120");
+                s+="Extra Toppings Added: 120\n";
             }
         }
         if(taken)
-            System.out.println("Paperbag Added: 20");
-        System.out.println("Total Price: "+this.bill);
-        return this.bill;
+            s+="Paperbag Added: 20\n";
+        s+="Total Price: "+this.bill+"\n";
+        return s;
     }
 }
